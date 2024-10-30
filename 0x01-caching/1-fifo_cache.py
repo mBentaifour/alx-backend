@@ -1,22 +1,25 @@
 #!/usr/bin/env python3
-""" First-In First-Out(FIFO) caching """
-
+"""FIFO > First-In First-Out caching
+"""
 from collections import OrderedDict
 
 from base_caching import BaseCaching
 
 
 class FIFOCache(BaseCaching):
-    """Create a class FIFOCache 
-    that inherits from BaseCaching and is a caching system
+    """Create a class FIFOCache
+    that inherits from BaseCaching
+    and is a caching system
     """
     def __init__(self):
-        """ Initialize the cache """
+        """Initialize the cache.
+        """
         super().__init__()
         self.cache_data = OrderedDict()
 
     def put(self, key, item):
-        """ Add an item in the cache """
+        """Add an item in the cache.
+        """
         if key is None or item is None:
             return
         self.cache_data[key] = item
@@ -25,5 +28,6 @@ class FIFOCache(BaseCaching):
             print("DISCARD:", first_key)
 
     def get(self, key):
-        """ Retrieve an item by key """
+        """Retrieve an item by key.
+        """
         return self.cache_data.get(key, None)
