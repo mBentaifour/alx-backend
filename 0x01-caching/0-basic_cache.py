@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 
 """Basic dictionary"""
-"""a class BasicCache that inherits"""
 
 from base_caching import BaseCaching
-
 
 class BasicCache(BaseCaching):
     """basic caching system"""
