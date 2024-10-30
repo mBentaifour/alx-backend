@@ -2,7 +2,8 @@
 
 """Basic dictionary"""
 """a class BasicCache that inherits
-from BaseCaching and is a caching system"""
+from BaseCaching and is a caching system
+"""
 
 from base_caching import BaseCaching
 
