@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 """ First-In First-Out(FIFO) caching """
 
 from collections import OrderedDict
